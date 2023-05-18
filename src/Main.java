@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
-       // task3();
+        task3();
        // task4();
     }
         public static void task1() {
@@ -32,7 +32,21 @@ public class Main {
         }
         System.out.println();
     }
-
-
+    public static void task3() {
+        System.out.println("Задание 3");
+        Set<String> repeat = new HashSet<>();
+        Set<String> unique = new HashSet<>();
+        for (String word : words) {
+            if (!unique.add(word)) {
+                repeat.add(word);
+            }
+        }
+        System.out.println("Unique " + unique);
+        System.out.println("Repeats " + repeat);
+        System.out.println();
     }
+
+
+
+}
 
